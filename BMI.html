@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BMI CALCULATOR</title>
+</head>
+<body style="background-color: black;color: aliceblue;">
+  <h2 class="heading"><b>BMI CALCULATOR</b></h2>
+  <div class="sec">
+  <form action="/submit" method="post">
+    <label for="height" style="color:rgb(215, 90, 22);">HEIGHT (in C.M.) : </label><br>
+    <input type="number" id="height" name="height" required placeholder="Give the Height here"><br><br>
+    
+    <label for="weight" style="color:violet;">WEIGHT (in K.G.) : </label><br>
+     <input type="number" id="weight" name="weight" required placeholder="Give the Weight here"><br><br>
+   <button class="btn"><b> Calculate</b></button>
+   <div id="result" style="margin-top:  20px;"></div>
+</div>  
+</form>
+</body>
+<link rel="stylesheet" href="bmi.css">
+<script src="bmi.js"></script>
+</html>

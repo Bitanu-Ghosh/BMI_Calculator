@@ -1,0 +1,15 @@
+.sec{
+   margin-left: 780px;
+    font-size: 40px;  
+}
+.heading{
+   margin-top: 300px;
+   margin-left: 780px;
+   font-size: 40px;
+   color: yellow;
+}
+.btn{font-size: 30px;
+background-color: green;}
+button:hover{ font-size: 33px;}
+#height{ font-size: 30px;}
+#weight{font-size: 30px;}
