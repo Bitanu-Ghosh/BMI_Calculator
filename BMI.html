@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BMI CALCULATOR</title>
+  <link rel="stylesheet" href="bmi.css" />
 </head>
-<body style="background-color: black;color: aliceblue;">
-  <h2 class="heading"><b>BMI CALCULATOR</b></h2>
-  <div class="sec">
-  <form action="/submit" method="post">
-    <label for="height" style="color:rgb(215, 90, 22);">HEIGHT (in C.M.) : </label><br>
-    <input type="number" id="height" name="height" required placeholder="Give the Height here"><br><br>
+<body>
+  <div class="container">
+    <h2 class="heading"> BMI CALCULATOR </h2>
+
     
-    <label for="weight" style="color:violet;">WEIGHT (in K.G.) : </label><br>
-     <input type="number" id="weight" name="weight" required placeholder="Give the Weight here"><br><br>
-   <button class="btn"><b> Calculate</b></button>
-   <div id="result" style="margin-top:  20px;"></div>
-</div>  
-</form>
+    <div class="card sec">
+      <form action="/submit" method="post">
+        <label for="height">HEIGHT (in C.M.)</label>
+        <input type="number" id="height" name="height" required placeholder="Enter your height">
+
+        <label for="weight">WEIGHT (in K.G.)</label>
+        <input type="number" id="weight" name="weight" required placeholder="Enter your weight">
+
+        <button class="btn" type="submit"><b>Calculate</b></button>
+        <div id="result" class="result"></div>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="bmi.js"></script>
 </body>
-<link rel="stylesheet" href="bmi.css">
-<script src="bmi.js"></script>
 </html>
+
+
